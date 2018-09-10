@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Header, Footer, Tabs, Card} from './components/layout';
 // import {Body} from 'native-base';
+import Grid from '@material-ui/core/Grid';
+
 
 class App extends Component {
   render() {
@@ -10,10 +12,18 @@ class App extends Component {
         <Tabs></Tabs>
         {/* <Sidebar></Sidebar> */}
         <body>
-        <Card/>
-        <br/>
-        <Card/>
-        <Card/>
+          <br/>
+        <Grid container>
+        <Grid item xs={4}>
+          <Card></Card>
+        </Grid>
+        <Grid item xs={4}>
+          <Card></Card>
+        </Grid>
+        <Grid item xs={4}>
+          <Card></Card>
+        </Grid>
+        </Grid>
         <Footer/>
         </body>
       </div>
