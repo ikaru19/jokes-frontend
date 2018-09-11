@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Header, Footer, Tabs, Card} from './components/layout';
+import {Header, Footer, Tabs, Card, Sidebar} from './components/layout';
 // import {Body} from 'native-base';
 import Grid from '@material-ui/core/Grid';
 
@@ -9,7 +9,8 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <Tabs></Tabs>
+        <Tabs/>
+        <Sidebar/>
         {/* <Sidebar></Sidebar> */}
         <body>
           <br/>
