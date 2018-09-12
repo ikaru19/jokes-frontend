@@ -15,9 +15,12 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CardHeader from '@material-ui/core/CardHeader';
+import Avatar from '@material-ui/core/Avatar';
+
 // import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
-const drawerWidth = 240;
+const drawerWidth = 340;
 
 const styles = theme => ({
   root: {
@@ -124,13 +127,17 @@ class PersistentDrawer extends React.Component {
         classes={{
           paper: classes.drawerPaper,
         }}
-      >
+      > 
+        
         <div className={classes.drawerHeader}>
+          
           <IconButton onClick={this.handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
+          
         </div>
         <Divider />
+        
         {/* NENG KENE ENEK AKUN */}
         <Divider />
           <List/>
