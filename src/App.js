@@ -5,9 +5,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-
+import {List} from './components/layout';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
@@ -134,6 +133,7 @@ class PersistentDrawer extends React.Component {
         <Divider />
         {/* NENG KENE ENEK AKUN */}
         <Divider />
+          <List/>
         {/* NENG KENE ENEK LIST + BADGES */}
       </Drawer>
     );

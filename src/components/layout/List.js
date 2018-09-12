@@ -13,6 +13,8 @@ import SendIcon from '@material-ui/icons/Send';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import StarBorder from '@material-ui/icons/StarBorder';
+import Badge from '@material-ui/core/Badge';
+import Button from '@material-ui/core/Button'
 
 const styles = theme => ({
   root: {
@@ -51,7 +53,9 @@ class NestedList extends React.Component {
           </ListItem>
           <ListItem button>
             <ListItemIcon>
+          <Badge color='error' badgeContent={4} className={classes.margin}>
               <DraftsIcon />
+          </Badge>
             </ListItemIcon>
             <ListItemText inset primary="Drafts" />
           </ListItem>
